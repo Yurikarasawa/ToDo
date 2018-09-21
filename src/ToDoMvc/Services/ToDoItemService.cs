@@ -17,6 +17,23 @@ namespace ToDoMvc.Services
             _context = context;
         }
 
+        public async Task<bool> AddItemAsync(NewToDoItem newItem)
+        {
+            var entity = new ToDoItem
+            {
+                Id = Guid.NewGuid(),
+                IsDone = false,
+                Title = newItem.Title,
+                DueAt = newItem.DueAt
+            };
+
+            _context.Items.Add(entity);
+
+            var saveResult = await _context.SaveChangesAsync();
+
+            return saveResult == 1;
+        }
+
         public async Task<IEnumerable<ToDoItem>> GetIncompleteItemAsync()
         {
             return await _context.Items

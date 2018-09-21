@@ -10,6 +10,6 @@ namespace ToDoMvc.Services
     {
 
         Task<IEnumerable<ToDoItem>> GetIncompleteItemAsync();
-        
+        Task<bool> AddItemAsync(NewToDoItem newItem);
     }
 }
