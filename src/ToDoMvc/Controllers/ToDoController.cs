@@ -31,15 +31,15 @@ namespace ToDoMvc.Controllers
             return View(vm);
         }
 
-        public async Task<IActionResult> AddItem(NewToDoItem newItem)
+        public async Task<IActionResult> MarkDone(Guid id)
         {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+            if (id == Guid.Empty) return BadRequest();
 
-            var succesfull = await _toDoItemService.AddItemAsync(newItem);
+            var succesfull = await _toDoItemService.MarkDoneAsync(id);
 
             if (!succesfull)
-                return BadRequest(new { error = "Could not add item" });
+                return BadRequest
+                    (new { error = "Could not add item" });
             return Ok();
         }
     }

@@ -14132,11 +14132,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\opet\\source\\repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
+      "projectUniqueName": "C:\\Users\\opet\\Source\\Repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
       "projectName": "ToDoMvc",
-      "projectPath": "C:\\Users\\opet\\source\\repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
+      "projectPath": "C:\\Users\\opet\\Source\\Repos\\ToDo\\src\\ToDoMvc\\ToDoMvc.csproj",
       "packagesPath": "C:\\Users\\opet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opet\\source\\repos\\ToDo\\src\\ToDoMvc\\obj\\",
+      "outputPath": "C:\\Users\\opet\\Source\\Repos\\ToDo\\src\\ToDoMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
